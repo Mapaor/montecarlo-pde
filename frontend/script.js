@@ -1,5 +1,5 @@
 // Get the current domain for API calls
-const API_BASE = "https://montecarlo-pde.onrender.com";
+const API_BASE = window.location.origin;
 
 async function runSimulation() {
   const runBtn = document.getElementById('runBtn');

@@ -18,7 +18,7 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-# Mount static files (frontend)
+# Mount static files (frontend in backend url)
 app.mount("/static", StaticFiles(directory="frontend"), name="static")
 
 class SimulationParams(BaseModel):
